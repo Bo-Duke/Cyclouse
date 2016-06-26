@@ -1,0 +1,30 @@
+#map {
+  width: 100%;
+  height: 100%;
+}
+.selected {
+  bottom: 0 !important;
+}
+
+.main-info {
+  margin-left: 5% !important;
+}
+
+.infos {
+
+  position: fixed;
+  margin-left: -100%;
+  bottom: -100px;
+
+  transition: 0.5s ease-in-out;
+
+  width: 90%;
+  height: 100px;
+
+  background-color: white;
+  border-radius: 3px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
+  text-align: center;
+
+}

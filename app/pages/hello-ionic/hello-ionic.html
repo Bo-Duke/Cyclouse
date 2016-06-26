@@ -1,0 +1,17 @@
+<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.18.0/mapbox-gl.css' rel='stylesheet' />
+
+<ion-navbar primary *navbar>
+  <button menuToggle>
+    <ion-icon name="menu"></ion-icon>
+  </button>
+  <ion-title>Cyclouse</ion-title>
+</ion-navbar>
+
+
+<ion-content>
+  <div id="map"></div>
+  <div *ngFor="let bikeStation of selected" class="infos" [class.selected]="selected[0].displayed" [class.main-info]="selected[0] === bikeStation">
+    <h3>{{ bikeStation.name }}</h3>
+    <p>Bikes: {{bikeStation.bikes}} Slots: {{bikeStation.slots}}
+  </div>
+</ion-content>
